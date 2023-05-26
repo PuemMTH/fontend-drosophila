@@ -31,11 +31,6 @@ const DroppableTarget = ({ boxName, acceptedTypes, onDrop, droppedItems }) => {
       <Typography variant="h6">{boxName}</Typography>
       <Typography>Drop here</Typography>
       <List>
-        {/* {droppedItems.map((item) => (
-          <ListItem key={item.id} dense>
-            <ListItemText primary={item.text} />
-          </ListItem>
-        ))} */}
           {droppedItems.map((item) => (
             <ImageListItem key={item.id}>
               <img

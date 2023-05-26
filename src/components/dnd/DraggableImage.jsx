@@ -16,17 +16,9 @@ const DraggableItem = ({ id, text, type }) => {
   }));
 
   return (
-    // <ListItem
-    //   ref={drag}
-    //   sx={{ opacity: isDragging ? 0.5 : 1, cursor: 'grab' }}
-    //   dense
-    // >
-    //   <ListItemText primary={text} />
-    // </ListItem>
-
     <ImageListItem 
       ref={drag}
-      sx={{ opacity: isDragging ? 0.5 : 1, cursor: 'grab' }}
+      sx={{ opacity: isDragging ? 0.5 : 1, cursor: 'grab'}}
     >
       <img
         src={type == "Male" ? DrosophilaFemale : DrosophilaMale}

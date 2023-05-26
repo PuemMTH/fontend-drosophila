@@ -8,7 +8,6 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
-import { BrowserRouter } from "react-router-dom";
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 

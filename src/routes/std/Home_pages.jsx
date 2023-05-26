@@ -1,5 +1,5 @@
 import { Button, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   increase,
   decrease,
@@ -43,7 +43,6 @@ const User = () => {
             <Typography variant='p' component='p' gutterBottom>
                 {JSON.stringify(useSelector((state) => state.user))}
             </Typography>
-
             <Button variant='contained' onClick={() => dispatch(inc(
                 {
                     name: 'test',
