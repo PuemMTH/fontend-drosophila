@@ -39,7 +39,6 @@ const initialItems = [
   { id: 16, text: "Male A3", type: "Male" },
   { id: 17, text: "Male A3", type: "Male" },
   { id: 18, text: "Male A3", type: "Male" },
-  { id: 19, text: "Female B3", type: "Female" },
 ];
 
 const App = () => {
@@ -79,9 +78,12 @@ const App = () => {
     <>
       <DndProvider backend={HTML5Backend}>
         <Container maxWidth='lg'>
-          <Typography variant='h4' gutterBottom>
-            React DND with Material-UI
-          </Typography>
+          <Box py={2}>
+            <Typography variant='h4' align='center' gutterBottom>
+              Drosophila Cross
+            </Typography>
+          </Box>
+            
           <Grid container spacing={2} justifyContent={"center"}>
             <Grid spacing={3}>
               <DroppableTarget
@@ -93,11 +95,12 @@ const App = () => {
                 droppedItems={droppedItemsB}
               />
             </Grid>
-            <Grid spacing={3} marginX={2}>
+            <Grid spacing={3} marginX={10} >
               <Stack spacing={1}>
                 <Item>
                   <Button
                     variant='outlined'
+                    color="error"
                     onClick={resetItems}
                     fullWidth
                   >
@@ -109,6 +112,7 @@ const App = () => {
                     variant='outlined'
                     onClick={resetItems}
                     fullWidth
+                    disabled
                   >
                     Mixed
                   </Button>
