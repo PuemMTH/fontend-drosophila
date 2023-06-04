@@ -6,6 +6,7 @@ import NotFound from "./NotFound.jsx";
 import Login from "./std/Login_pages.jsx";
 import Home from "./std/Home_pages.jsx";
 import Drosophila_Selected from "../routes/std/Select_pages.jsx";
+import Charts from "./std/Charts_pages.jsx";
 
 import { Button } from "@mui/material";
 import { ErrorInfo } from "react";
@@ -64,6 +65,10 @@ let router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
+      },
+      {
+        path: "charts",
+        element: <Charts />,
       }
     ],
     errorElement: <NotFound />,
